@@ -436,9 +436,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=maoyo
-Environment=HOME=/home/maoyo
-ExecStart=/home/maoyo/.local/bin/hermes gateway
+User=yourusername
+Environment=HOME=/home/yourusername
+ExecStart=/home/yourusername/.local/bin/hermes gateway
 Restart=on-failure
 RestartSec=10
 

@@ -40,7 +40,7 @@ After=network.target
 ExecStart=/usr/bin/hermes run
 Restart=on-failure
 RestartSec=30
-Environment=HOME=/home/maoyo
+Environment=HOME=$HOME
 
 [Install]
 WantedBy=default.target
@@ -173,10 +173,10 @@ Mac 和手机端通过 SSH 隧道访问 T480s 上的 Dashboard 和 API：
 
 ```bash
 # Mac → T480s 隧道（访问 Dashboard）
-ssh -N -L 9119:localhost:9119 maoyo@t480s.local
+ssh -N -L 9119:localhost:9119 user@t480s.local
 
 # 手机 → T480s 隧道（Termux + SSH）
-ssh -N -L 8648:localhost:8648 maoyo@t480s-ip
+ssh -N -L 8648:localhost:8648 user@t480s-ip
 ```
 
 ---

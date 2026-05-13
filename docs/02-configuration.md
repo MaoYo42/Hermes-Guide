@@ -415,7 +415,7 @@ mcp_servers:
     command: npx
     args: ["-y", "firecrawl-mcp"]
     env:
-      FIRECRAWL_API_KEY: "fc-2fd...064c"
+      FIRECRAWL_API_KEY: "fc-your-api-key"
 ```
 
 **MaoYo42 集成了 Firecrawl MCP 服务器**：

@@ -69,9 +69,9 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/home/maoyo/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --replace
-WorkingDirectory=/home/maoyo/.hermes/hermes-agent
-Environment="HERMES_HOME=/home/maoyo/.hermes"
+ExecStart=$HOME/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --replace
+WorkingDirectory=$HOME/.hermes/hermes-agent
+Environment="HERMES_HOME=$HOME/.hermes"
 Restart=always
 RestartSec=60
 

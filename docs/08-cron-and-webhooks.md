@@ -4,7 +4,7 @@
 
 Hermes Agent 内置了一套实用的定时任务系统（Cron Job System），同时支持 Webhook 订阅机制。两者结合，可以让 Agent 在无人值守的情况下周期性地执行任务、监控变化、推送通知。
 
-MaoYo42 目前配置了约 10 个活跃 Cron Job，涵盖股票分析、系统巡检、内容监控等场景。
+MaoYo42 的 Cron 使用策略聚焦于关键业务场景：
 
 ---
 
